@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg {
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 15px;
+    width: 150%;
+}
+
+.vector {
+    width: 60%;
+    position: absolute;
+    display: inline;
+    flex-shrink: 0;
+    top: -20;
+    left: -60px;
+}
+
+.logo {
+    position: relative;
+    margin: 3% 5%;
+}
+.logo1 {
+    position: relative;
+    height: 50px;
+    margin-top: -2%;
+    margin-left: 800px;
+}
+
+.hr-lines{
+    position: relative;
+    /*  new lines  */
+    max-width: 3000px;
+    margin: 20px auto 50px 5px;
+    text-align: center;
+  }
+
+  .hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 101%;
+    background: #78326e;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -0.2%;
+  }
+  .hr-lines:before{
+    content:" ";
+    height: 2px;
+    width: 100%;
+    background: #78326e;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0.5%;
+}
+
+.unanswered {
+    animation: fadeBackground 3s; /* Adjust the duration as needed */
+    background-color: transparent; /* Change to the desired highlight background color */
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeBackground {
+    0%, 20% {
+        background-color: rgba(230,114,24,0.5); /* Change to the desired highlight background color */
+    }
+    100% {
+        background-color: transparent; /* Fully transparent */
+    }
+}
+
+
+.title {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    color: #ffffff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    top: 5px;
+    left: 20%;
+}
+
+.divs {
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #e6e6e6;
+    box-shadow: 4px 4px 15px 0px rgba(230,114,24,1);
+    border: 2px solid rgba(230,114,24,1);
+    width: 1650px;
+    margin: auto;
+    padding: 20px;
+}
+
+.dimension {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+.name {
+    color: #78326e;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 4%;
+}
+
+.select {
+    color: #78326e;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hash {
+    color: #ED1C24;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.optionContainer {
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+.nameField {
+    width: 80%;
+    height: 6%;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 20px;
+    background: #F5F5F5;
+    font-size: 25px;
+    outline: none;
+}
+
+.nameField::placeholder {
+    font-size: 100%;
+}
+
+/* input {
+    padding-left: 4%;
+} */
+
+/* .label {
+    display: inline;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #3F3F3F;
+    font-family: Montserrat;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 500;
+} */
+
+label {
+    padding-right: 15px;
+}
+
+.button-container {
+    text-align: center;
+    padding-top: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.prev,
+.next {
+    color: #3F3F3F;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 20px;
+    width: 245px;
+    height: 70px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.prev:hover,
+.next:hover {
+    color: #FFFFFF;
+    background-color: #e67218;
+}
+
+.footer {
+    width: 3840px;
+    height: 50px;
+    margin-top: 15%;
+    position: sticky;
+    margin-left: 500px;
+    border-radius: 0px 0px 15px 15px;
+    background: #D9D9D9;
+    padding-top: 25px;
+}
+
+
+
+.copyright {
+    display: inline;
+    margin-left: 650px;
+}
+
+
+form .likert {
+    list-style: none;
+    width: 100%;
+    margin-top: 1%;
+    display: block;
+}
+
+.options {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    accent-color: #3F3F3F;
+    float: left;
+    margin-left: -72px;
+}
+
+form .likert li {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    vertical-align: top;
+}
+
+form .likert li input[type=radio] {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 40%;
+    right: 20%;
+}
+
+.tacbox {
+    display: block;
+    margin: 2em;
+    max-width: 800px;
+}
+
+.terms {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
+
+/*
+form .likert:last-of-type {
+    border-bottom: 0;
+}
+*/

@@ -1,0 +1,2287 @@
+<html>
+
+<head>
+    <title>Sonata Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="survey.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body
+    style="background-image: url('Back.png'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
+
+    <div class="wrapper" style="margin-bottom: 40px;">
+        <div class="header">
+            <img src="logo.png" class="logo" alt="">
+            <p class="title" style="color: black;">INCLUSION SURVEY</p>
+            <img src="Parity.png" class="logo1" alt="">
+        </div>
+        <div class="form-wrapper">
+            <form action=<%=hello %> method="post" id="managementForm" nohistory>
+                <div class="divs" id="section1">
+                    <h6 class="mand" style=" text-align: end;"><span style="color: red;">* </span>Indicates Question is Mandatory</h6>
+                    <div class="grid">
+                        <div class="row-header">
+                            <div class="col"></div>
+                            <div class="col">
+                                <ul class='likert UL' style="background: none;">
+                                    <li>
+                                        <label class="select fw-bolder">Strongly Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Neutral</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Disagree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder select1">Strongly Disagree</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I am comfortable to be my authentic self in my organization<span
+                                        class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="1" type="radio" name="q1" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="2" type="radio" name="q1" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="3" type="radio" name="q1" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="4" type="radio" name="q1" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="5" type="radio" name="q1" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="1" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="2" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="3" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="4" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="5" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                                
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I am comfortable to talk about my background and experiences with my colleagues without feeling excluded<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="6" type="radio" name="q2" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="7" type="radio" name="q2" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="8" type="radio" name="q2" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="9" type="radio" name="q2" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="10" type="radio" name="q2" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="6" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="7" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="8" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="9" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="10" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">If I raise a concern about harassment, discriminatory treatment, or anything else that is wrong at work, I am confident my organization would do what is right<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="11" type="radio" name="q3" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="12" type="radio" name="q3" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="13" type="radio" name="q3" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="14" type="radio" name="q3" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="15" type="radio" name="q3" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="11" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="12" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="13" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="14" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="15" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">We have healthy disagreements and debates among the team I am working in<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="16" type="radio" name="q4" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="17" type="radio" name="q4" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="18" type="radio" name="q4" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="19" type="radio" name="q4" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="20" type="radio" name="q4" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="16" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="17" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="18" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="19" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="20" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I am comfortable asking other team members for help<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="21" type="radio" name="q5" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="22" type="radio" name="q5" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="23" type="radio" name="q5" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="24" type="radio" name="q5" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="25" type="radio" name="q5" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="21" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="22" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="23" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="24" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="25" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Discriminatory jokes/comments made among employees are not tolerated in my working environment<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="26" type="radio" name="q6" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="27" type="radio" name="q6" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="28" type="radio" name="q6" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="29" type="radio" name="q6" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="30" type="radio" name="q6" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="26" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="27" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="28" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="29" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="30" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">During team meetings, all members are encouraged to speak up and share thoughts and ideas<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="31" type="radio" name="q7" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="32" type="radio" name="q7" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="33" type="radio" name="q7" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="34" type="radio" name="q7" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="35" type="radio" name="q7" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="31" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="32" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="33" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="34" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="35" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization encourages or supports employees' work life balance<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="61" type="radio" name="q8" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="62" type="radio" name="q8" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="63" type="radio" name="q8" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="64" type="radio" name="q8" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="65" type="radio" name="q8" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="61" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="62" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="63" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="64" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="65" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                    <hr class="seperator-grid">
+                    <div class="grid">
+                        <div class="row-header">
+                            <div class="col"></div>
+                            <div class="col">
+                                <ul class="likert" style="background: none;">
+                                    <li>
+                                        <label class="select fw-bolder">Strongly Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Neutral</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Disagree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder select1">Strongly Disagree</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization values diverse people, opinions and ideas<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="36" type="radio" name="q9" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="37" type="radio" name="q9" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="38" type="radio" name="q9" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="39" type="radio" name="q9" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="40" type="radio" name="q9" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="36" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="37" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="38" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="39" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="40" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                           
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Employees of different age, gender and cultures are valued and treated equitably in the company<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="41" type="radio" name="q10" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="42" type="radio" name="q10" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="43" type="radio" name="q10" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="44" type="radio" name="q10" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="45" type="radio" name="q10" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="41" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="42" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="43" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="44" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="45" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization ensures an inclusive environment via language used<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="46" type="radio" name="q11" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="47" type="radio" name="q11" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="48" type="radio" name="q11" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="49" type="radio" name="q11" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="50" type="radio" name="q11" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="46" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="47" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="48" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="49" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="50" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization ensures an inclusive culture that allows diverse employees to bring their authentic self to work<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="51" type="radio" name="q12" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="52" type="radio" name="q12" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="53" type="radio" name="q12" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="54" type="radio" name="q12" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="55" type="radio" name="q12" class="options likert" value="Strongly Disgree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="51" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="52" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="53" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="54" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="55" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization ensures a respectful work culture by giving all voices a respectful hearing in meetings/all hands meet/other forums<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="56" type="radio" name="q13" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="57" type="radio" name="q13" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="58" type="radio" name="q13" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="59" type="radio" name="q13" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="60" type="radio" name="q13" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="56" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="57" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="58" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="59" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="60" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organisation regularly communicates information about its diversity goals<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="66" type="radio" name="q14" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="67" type="radio" name="q14" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="68" type="radio" name="q14" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="69" type="radio" name="q14" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="70" type="radio" name="q14" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>   
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="66" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="67" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="68" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="69" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="70" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Employees from different backgrounds and experiences interact well in the company<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="71" type="radio" name="q15" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="72" type="radio" name="q15" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="73" type="radio" name="q15" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="74" type="radio" name="q15" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="75" type="radio" name="q15" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>  
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="71" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="72" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="73" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="74" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="75" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                    <hr class="seperator-grid">
+                    <div class="grid">
+                        <div class="row-header">
+                            <div class="col"></div>
+                            <div class="col">
+                                <ul class="likert UL" style="background: none;">
+                                    <li>
+                                        <label class="select fw-bolder">Strongly Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Neutral</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Disagree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder select1">Strongly Disagree</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization has inclusive systems, processes, policies and programs<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="76" type="radio" name="q16" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="77" type="radio" name="q16" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="78" type="radio" name="q16" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="79" type="radio" name="q16" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="80" type="radio" name="q16" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="76" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="77" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="78" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="79" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="80" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I believe HR policies in my organization are not discriminatory<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="81" type="radio" name="q17" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="82" type="radio" name="q17" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="83" type="radio" name="q17" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="84" type="radio" name="q17" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="85" type="radio" name="q17" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>  
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="81" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="82" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="83" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="84" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="85" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">In my organization, the hiring process is based on clearly defined criteria that eliminates age, gender and cultural biases<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="86" type="radio" name="q18" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="87" type="radio" name="q18" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="88" type="radio" name="q18" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="89" type="radio" name="q18" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="90" type="radio" name="q18" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="86" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="87" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="88" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="89" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="90" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization puts necessary efforts to retain employees from different backgrounds<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="91" type="radio" name="q19" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="92" type="radio" name="q19" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="93" type="radio" name="q19" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="94" type="radio" name="q19" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="95" type="radio" name="q19" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="91" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="92" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="93" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="94" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="95" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Organizational objectives, changes and progress are discussed and clearly communicated to all employees<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="96" type="radio" name="q20" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="97" type="radio" name="q20" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="98" type="radio" name="q20" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="99" type="radio" name="q20" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="100" type="radio" name="q20" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="96" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="97" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="98" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="99" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="100" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I am also provided opportunities to ask questions and share my views about organizational goals and decisions<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="101" type="radio" name="q21" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="102" type="radio" name="q21" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="103" type="radio" name="q21" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="104" type="radio" name="q21" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="105" type="radio" name="q21" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="101" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="102" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="103" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="104" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="105" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My organization provides good educational programs to promote diversity, equity, and inclusion in our workplace<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="106" type="radio" name="q22" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="107" type="radio" name="q22" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="108" type="radio" name="q22" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="109" type="radio" name="q22" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="110" type="radio" name="q22" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="106" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="107" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="108" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="109" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="110" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                    <hr class="seperator-grid">
+                    <div class="grid">
+                        <div class="row-header">
+                            <div class="col"></div>
+                            <div class="col">
+                                <ul class="likert" style="background: none">
+                                    <li>
+                                        <label class="select fw-bolder">Strongly Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Neutral</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Disagree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder select1">Strongly Disagree</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Employees of different age, gender and cultural background are treated fairly in an internal promotion process<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="111" type="radio" name="q23" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="112" type="radio" name="q23" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="113" type="radio" name="q23" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="114" type="radio" name="q23" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="115" type="radio" name="q23" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>   
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="111" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="112" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="113" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="114" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="115" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">A career development path exists and is shared with all employees<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="116" type="radio" name="q24" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="117" type="radio" name="q24" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="118" type="radio" name="q24" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="119" type="radio" name="q24" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="120" type="radio" name="q24" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="116" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="117" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="118" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="119" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="120" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I have the opportunity like everyone else to work in any area / function including 'core' business areas in the organization<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="121" type="radio" name="q25" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="122" type="radio" name="q25" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="123" type="radio" name="q25" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="124" type="radio" name="q25" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="125" type="radio" name="q25" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="121" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="122" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="123" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="124" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="125" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I have the opportunity like everyone else among my peers to network professionally in internal and external forums<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="126" type="radio" name="q26" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="127" type="radio" name="q26" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="128" type="radio" name="q26" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="129" type="radio" name="q26" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="130" type="radio" name="q26" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>  
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="126" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="127" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="128" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="129" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="130" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I have the opportunity like everyone else to work on key projects and get development opportunities in the organization<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="131" type="radio" name="q27" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="132" type="radio" name="q27" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="133" type="radio" name="q27" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="134" type="radio" name="q27" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="135" type="radio" name="q27" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="131" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="132" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="133" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="134" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="135" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I have access like everyone else to formal and informal mentoring in the organization<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="136" type="radio" name="q28" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="137" type="radio" name="q28" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="138" type="radio" name="q28" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="139" type="radio" name="q28" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="140" type="radio" name="q28" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="136" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="137" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="138" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="139" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="140" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">The promotion process is based on clearly defined criteria
+                                    <span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="141" type="radio" name="q29" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="142" type="radio" name="q29" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="143" type="radio" name="q29" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="144" type="radio" name="q29" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="145" type="radio" name="q29" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="141" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="142" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="143" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="144" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="145" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                    <hr class="seperator-grid">
+                    <div class="grid">
+                        <div class="row-header">
+                            <div class="col"></div>
+                            <div class="col">
+                                <ul class="likert UL" style="background: none;">
+                                    <li>
+                                        <label class="select fw-bolder">Strongly Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Agree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Neutral</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder">Disagree</label>
+                                    </li>
+                                    <li>
+                                        <label class="select fw-bolder select1">Strongly Disagree</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Managers and leaders are inclusive of diverse people in the team and in the organization<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="146" type="radio" name="q30" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="147" type="radio" name="q30" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="148" type="radio" name="q30" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="149" type="radio" name="q30" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="150" type="radio" name="q30" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>   
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="146" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="147" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="148" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="149" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="150" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">Leaders in my organization treat everyone with fairness and respect regardless of age, gender, race and ethnicity<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="151" type="radio" name="q31" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="152" type="radio" name="q31" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="153" type="radio" name="q31" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="154" type="radio" name="q31" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="155" type="radio" name="q31" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="151" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="152" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="153" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="154" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="155" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">I have role models among the leaders in my organization who inspire me<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="156" type="radio" name="q32" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="157" type="radio" name="q32" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="158" type="radio" name="q32" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="159" type="radio" name="q32" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="160" type="radio" name="q32" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="156" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="157" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="158" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="159" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="160" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>   
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My manager is interested in and aware of my long term career aspirations<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="161" type="radio" name="q33" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="162" type="radio" name="q33" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="163" type="radio" name="q33" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="164" type="radio" name="q33" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="165" type="radio" name="q33" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="161" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="162" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="163" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="164" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="165" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My manager is fair and transparent in allocation of critical assignments, key projects and development opportunities<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="166" type="radio" name="q34" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="167" type="radio" name="q34" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="168" type="radio" name="q34" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="169" type="radio" name="q34" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="170" type="radio" name="q34" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="166" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="167" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="168" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="169" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="170" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My manager helps me balance my personal commitments while fulfilling my professional commitments<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="171" type="radio" name="q35" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="172" type="radio" name="q35" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="173" type="radio" name="q35" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="174" type="radio" name="q35" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="175" type="radio" name="q35" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="171" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="172" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="173" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="174" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="175" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="name">My manager handles matters of discrimination and bias satisfactorily<span class="hash">*</span>
+                                </p>
+                            </div>
+                            <div class="col options-parent">
+                                <div class="col">
+                                    <ul class="likert op">
+                                        <li>
+                                            <input id="176" type="radio" name="q36" class="options likert" value="Strongly Agree"
+                                                required>
+                                        </li>
+                                        <li>
+                                            <input id="177" type="radio" name="q36" class="options likert" value="Agree">
+                                        </li>
+                                        <li>
+                                            <input id="178" type="radio" name="q36" class="options likert" value="Neutral">
+                                        </li>
+                                        <li>
+                                            <input id="179" type="radio" name="q36" class="options likert" value="Disagree">
+                                        </li>
+                                        <li>
+                                            <input id="180" type="radio" name="q36" class="options likert" value="Strongly Disagree">
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="row clear">
+                                    <ul class='likert UL os' style="background: none;">
+                                        <li>
+                                            <label for="176" class="select fw-bolder">Strongly Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="177" class="select fw-bolder">Agree</label>
+                                        </li>
+                                        <li>
+                                            <label for="178" class="select fw-bolder">Neutral</label>
+                                        </li>
+                                        <li>
+                                            <label for="179" class="select fw-bolder">Disagree</label>
+                                        </li>
+                                        <li>
+                                            <label for="180" class="select fw-bolder select1">Strongly Disagree</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="row text-b" style="margin-top: 30px;">
+                            <br><br>
+                            <p class="name">Based on your experience, what
+                                are the enablers and barriers faced by women in the organization?
+
+                            </p>
+                            <textarea name="q37" id="" cols="30" rows="5" class="nameField" style="width: 70%;"></textarea>
+                        </div>
+
+                        <div class="row text-b">
+                            <br><br>
+                            <p class="name">Based on your experience, what
+                                are the enablers and barriers faced by men in the organization?
+
+                            </p>
+                            <textarea name="q38" id="" cols="30" rows="5" class="nameField" style="width: 70%;"></textarea>
+                        </div>
+
+                        <div class="row text-b">
+                            <br><br>
+                            <p class="name">Based on your experience, what
+                                are the enablers and barriers faced by employees of different ages in the
+                                organization?
+                            </p>
+                            <textarea name="q39" id="" cols="30" rows="5" class="nameField" style="width: 70%;"></textarea>
+                        </div>
+
+                        <div class="row text-b">
+                            <br><br>
+                            <p class="name">Based on your experience, what
+                                are the enablers and barriers faced by employees of different cadres/grades in the
+                                organization?
+
+                            </p>
+                            <textarea name="q40" id="" cols="30" rows="5" class="nameField" style="width: 70%;"></textarea>
+                        </div>
+                        <div class="row">
+                            <br><br>
+                            <p class="name">In your opinion, what is the
+                                most important action that managers could take to improve diversity and inclusion in
+                                the
+                                organization?
+
+                            </p>
+                            <textarea name="q41" id="" cols="30" rows="5" class="nameField" style="width: 70%;"></textarea>
+                        </div>
+
+
+                        <div class="button-container">
+                            <!-- <button class="prev" id="prev" onclick="showPrev()">Prev</button> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="divs" id="section2">
+                    <h6 class="mand" style=" text-align: end;"><span style="color: red;">* </span>Indicates Question is Mandatory</h6>
+                    <br>
+                    <h3 class="titlers">Please share the following details about yourself for purposes of analysis</h3>
+                    <div class="grid">
+                        <div class="">
+                            <br>
+                            <label class="name">1.What is Your Gender?<span class="hash">*</span></label>
+                            <br>
+                            <br>
+                            <select name="gender" class="likert likert2">
+                                <option disabled selected value="Please select">Please select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to answer">Prefer not to answer</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="">
+                            <br>
+                            <label class="name">2.Please tell us how long you have you been employed under Sonata.<span class="hash">*</span>
+                            </label>
+
+                            <br>
+                            <br>
+                            <select name="years" class="likert likert2">
+                                <option disabled selected value="Please select">Please select</option>
+                                <option value="less than 1 year" class="nameField">less than 1 year</option>
+                                <option value="between 1-5 years">between 1-5 years</option>
+                                <option value="between 6-10 years">between 6-10 years</option>
+                                <option value="between 11-15 years">between 11-15 years</option>
+                                <option value="between 16-20 years">between 16-20 years</option>
+                                <option value="over 21 years">over 21 years</option>
+                                <option value="Prefer not to answer">Prefer not to answer</option>
+                            </select>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="">
+                            <br>
+                            <label class="name">3.Please indicate your age<span class="hash">*</span></label>
+                            <br>
+                            <br>
+                            <select name="age" class="likert likert2">
+                                <option disabled selected value="Please select">Please select</option>
+                                <option value="20 - 25 years">20 - 25 years</option>
+                                <option value="26 - 30 years">26 - 30 years</option>
+                                <option value="31 - 40 years">31 - 40 years</option>
+                                <option value="41 - 50 years">41 - 50 years</option>
+                                <option value="51 - 60 years">51 - 60 years</option>
+                                <option value="61 years or older">61 years or older</option>
+                                <option value="Prefer not to answer">Prefer not to answer</option>
+                            </select>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="">
+                            <br>
+                            <label class="name">4.Which of the following office location are you from?<span class="hash">*</span>
+                            </label>
+                            <br>
+                            <br>
+                            <select name="location" class="likert likert2">
+                                <option disabled selected value="Please select">Please select</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Germany">Germany</option>
+                                <option value="India">India</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="UK">UK</option>
+                                <option value="US">US</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="">
+                            <br>
+                            <label class="name">5. Which of the following department are you from?<span class="hash">*</span>
+                            </label>
+                            <br>
+                            <br>
+                            <select name="unit" class="likert likert2">
+                                <option disabled selected value="Please select">Please select</option>
+                                <option value="Delivery">Delivery</option>
+                                <option value="Finance">Finance</option>
+                                <option value="HR">HR</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Competency">Competency</option>
+                                <option value="CEO office">CEO office</option>
+                                <option value="Sales/Global Partner Office">Sales/Global Partner Office</option>
+                                <option value="SITL">SITL</option>
+                                <!-- <option value="Microsoft account">Microsoft account</option> -->
+                                <!-- <option value="APAC">APAC</option> -->
+                                <!-- <option value="ANZ">ANZ</option> -->
+                                <!-- <option value="EU">EU</option> -->
+                                <!-- <option value="US TMT & Emerging">US TMT & Emerging</option> -->
+                                <!-- <option value="US Retail & Manufacturing">US Retail & Manufacturing</option> -->
+                                <!-- <option value="UK & Ireland">UK & Ireland</option> -->
+                                <!-- <option value="US HLS">US HLS</option> -->
+                                <!-- <option value="US BFSI">US BFSI</option> -->
+                                <option value="Encore">Encore</option>
+                                <option value="GBW">GBW</option>
+                                <option value="Quant">Quant</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="">
+                            <br>
+                            <label class="name">6. What is your employee band? (If unsure, please reach out to your HRBP)<span class="hash">*</span></label>
+                            <br>
+                            <br>
+
+                            <select name="band" class="likert likert2">
+                                <option disabled selected value="Please select">Please select</option>
+                                <option value="Trainee">Trainee</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="SM">SM</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit" onclick="validateForm(event)" class="next" style="margin-top: 40px;">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <button class="next next1" id="next" onclick="next()">Next</button>
+            <button class="prev" id="prev" onclick="prev()" style="display:none;">Prev</button>
+        </div>
+    </div>
+
+    <script>
+
+        $("#section1").css("display", "block")
+        $("#section2").css("display", "none")
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function next() {
+            var allQuestionsAnswered = true;
+            var firstUnansweredQuestion = null;
+
+            for (var i = 1; i <= 36; i++) {
+                var radioElements = document.querySelectorAll('[name="q' + i + '"]');
+                var isQuestionAnswered = false;
+
+                radioElements.forEach(function (radioElement) {
+                    if (radioElement.checked) {
+                        isQuestionAnswered = true;
+                    }
+                });
+
+                if (!isQuestionAnswered) {
+                    allQuestionsAnswered = false;
+                    if (!firstUnansweredQuestion) {
+                        firstUnansweredQuestion = radioElements[0];
+                    }
+                }
+            }
+
+            if (!allQuestionsAnswered && firstUnansweredQuestion) {
+                firstUnansweredQuestion.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                var unansweredQuestionContainers = document.querySelectorAll('.likert:not([style*="background: none"])');
+                unansweredQuestionContainers.forEach(function (container) {
+                    var inputs = container.querySelectorAll('.options');
+                    var hasCheckedInput = Array.from(inputs).some(function (input) {
+                        return input.checked;
+                    });
+
+                    if (!hasCheckedInput) {
+                        container.classList.add('unanswered');
+                        setTimeout(function () {
+                            container.classList.remove('unanswered');
+                        }, 2000); // Adjust the duration (in milliseconds) as needed
+                    } else {
+                        container.classList.remove('unanswered');
+                    }
+                })
+            } else {
+                $("#section1").css("display", "none")
+                $("#section2").css("display", "block")
+                $("#next").css("display", "none");
+                $("#prev").css("display", "block");
+                scrollToTop();
+            }
+        }
+        function prev() {
+            $("#section1").css("display", "block")
+            $("#section2").css("display", "none")
+            $("#next").css("display", "block");
+            $("#prev").css("display", "none");
+        }
+
+
+
+        function disabledBackbutton() {
+            window.history.forward();
+        }
+        document.querySelector("form").addEventListener("submit", disabledBackbutton);
+
+        function validateForm(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            var selectedValue1 = document.querySelector('select[name="gender"]').value;
+            var selectedValue2 = document.querySelector('select[name="years"]').value;
+            var selectedValue3 = document.querySelector('select[name="age"]').value;
+            var selectedValue4 = document.querySelector('select[name="location"]').value;
+            var selectedValue5 = document.querySelector('select[name="unit"]').value;
+            var selectedValue6 = document.querySelector('select[name="band"]').value;
+
+
+
+
+
+            if (selectedValue1 === "Please select" || selectedValue2 === "Please select" || selectedValue3 === "Please select" || selectedValue4 === "Please select" || selectedValue5 === "Please select" || selectedValue6 === "Please select") {
+                alert("Please select all options");
+                window.scrollTo(0, 0); // Scroll to the top of the page
+            } else {
+                document.getElementById("managementForm").submit(); // Submit the form
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
